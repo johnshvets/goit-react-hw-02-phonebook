@@ -5,7 +5,7 @@ const ContactList = ({ contacts, handleClick }) => (
   <ul className={s.contactList}>
     {contacts.map(({ id, name, number }) => (
       <li key={id} className={s.contact}>
-        <h3 className={name}>Name: {number}</h3>
+        <h3 className={name}>Name: {name}</h3>
         <p className={number}>Number: {number}</p>
         <button
           type="button"
